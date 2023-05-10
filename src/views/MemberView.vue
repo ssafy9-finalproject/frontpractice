@@ -1,11 +1,16 @@
 <template>
-    
+    <div id="memberView">
+        <nav-bar></nav-bar>
+        <end-footer></end-footer>
+    </div>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue';
+import EndFooter from '@/components/EndFooter.vue';
 export default {
-    name: '',
-    components: {},
+    name: 'MemberView',
+    components: {NavBar, EndFooter},
     data() {
         return {
             message: '',

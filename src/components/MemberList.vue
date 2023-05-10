@@ -24,9 +24,9 @@
                         </tr>
                     </thead>                                 
                     <tbody>
-                        <tr v-for="(member, index) in members" :key="member.MemberId">
+                        <tr v-for="(member, index) in members" :key="member.memberId">
                             <td v-text="index + 1"></td>
-                            <td v-text="member.MemberId" v-on:click="memberDetail(member.memberId)"></td>
+                            <td v-text="member.memberId" v-on:click="memberDetail(member.memberId)"></td>
                             <td v-text="member.password"></td>
                             <td v-text="member.nickname"></td>
                             <td v-text="member.emailId"></td>
